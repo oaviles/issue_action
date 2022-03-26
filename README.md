@@ -1,6 +1,6 @@
 # GitHub Action (Create Issue)
 
-This actions helps to create issues automatically, how to use:
+This actions helps to create issues programmatically, how to use:
 
 ```
 on: [workflow_dispatch]

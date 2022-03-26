@@ -1,0 +1,21 @@
+name: "I have issues powered by OA"
+
+description: "consume the output of the previous action and create a new issue in the repository"
+
+inputs:
+  issue-title:
+    description: "Every issue needs a title, it's nice to supply one, even though you could do this dynamically within your code"
+    default: "Deployment fail : PoC Enviroment"
+    required: true
+  issue-body:
+    description: "Every issue needs a body, it's nice to supply one"
+    default: "Default comment, type your own comment"
+    required: false
+  repo-token:
+    description: "Every issue needs a body, it's nice to supply one"
+    default: "Here, your own GITHUB_TOKEN"
+    required: true
+
+runs:
+  using: "node12"
+  main: "index.js"

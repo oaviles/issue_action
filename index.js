@@ -7,7 +7,7 @@ async function run() {
       const issueBody = core.getInput("issue-body");
       const token = core.getInput("repo-token");
   
-      const octokit = new github.GitHub(token);
+      const octokit = new github.getOctokit(token);
       
       // API: https://docs.github.com/en/rest/reference/issues#create-an-issue
       const newIssue = await octokit.issues.create({
